@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Literata', serif;
+    color: #232322;
+}
+
+.texte-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #FFFBF6;
+    font-size: 22px;
+    text-align: justify;
+    padding: 1.2cm;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.dialogue-group {
+    position: relative;
+    margin: 1.2em 0;
+    cursor: pointer;
+    padding-left: 23px;
+    transition: opacity 0.3s;
+}
+
+.dialogue-group p {
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.dialogue-group::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 3px;
+    background: linear-gradient(to right, #445051 1px, #F5FF85 1px 3px);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.dialogue-group.clicked::before {
+    opacity: 0.25;
+}
+
+.dialogue-group.clicked p {
+    opacity: 0.5;
+}
+
+/* Bouton Activer l'audio */
+#audio-control {
+    margin: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #445051;
+    color: #F5FF85;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
