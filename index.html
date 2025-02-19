@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liseuse Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="audio-control">Activer l'audio</button>
+    
+    <div class="texte-container">
+        <p>“Être pauvre, c'est pas manquer d'argent, enfin, ce n'est pas que ça...”</p>
+
+        <!-- Groupe de dialogue avec son lié -->
+        <div class="dialogue-group" data-audio="audio1">
+            <p>— Bon, tu notes ton truc, j’ai pas que ça à faire.</p>
+            <p>— Putain, mais qu’est-ce qui t’a pris, Bir ? Tu sais dans quoi tu t’es mis, là ?</p>
+            <p>— J’ai voulu voler, j’ai joué, j’ai perdu, voilà, y’a rien à dire de plus.</p>
+        </div>
+
+        <div class="dialogue-group" data-audio="audio2">
+            <p>— Écoute, on peut peut-être s’arranger, je vais parler avec le gars qui t’a vu...</p>
+            <p>— Mais je te demande rien, moi, j’ai voulu me faire de l’argent...</p>
+        </div>
+
+        <div class="dialogue-group" data-audio="audio3">
+            <p>— Bir, en 4 ans, j’ai vu que deux gars monter de secteur...</p>
+            <p>— Écoute, petit, ça va faire 52 ans que je trime ici...</p>
+        </div>
+    </div>
+
+    <!-- Lecteurs audio cachés -->
+    <audio id="audio1" src="https://static.wixstatic.com/mp3/b9ad46_b2e30b69ac3e4765a77fe40f723f9006.mp3"></audio>
+    <audio id="audio2" src="https://static.wixstatic.com/mp3/b9ad46_b2e30b69ac3e4765a77fe40f723f9006.mp3"></audio>
+    <audio id="audio3" src="https://static.wixstatic.com/mp3/b9ad46_b2e30b69ac3e4765a77fe40f723f9006.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
